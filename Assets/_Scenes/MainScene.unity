@@ -1075,13 +1075,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2036980633}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-<<<<<<< HEAD:Assets/_Scenes/MainScene.unity
-  m_LocalPosition: {x: 959, y: 539.5, z: 0}
-  m_LocalScale: {x: 2.3975, y: 2.3975, z: 2.3975}
-=======
   m_LocalPosition: {x: 348.5, y: 196, z: 0}
   m_LocalScale: {x: 0.87125, y: 0.87125, z: 0.87125}
->>>>>>> 0cd04a245fa551dbf119959cfae91e6f1c8c5cbb:Assets/Assets/_Scenes/MainScene.unity
   m_Children:
   - {fileID: 31054193}
   - {fileID: 157386238}
