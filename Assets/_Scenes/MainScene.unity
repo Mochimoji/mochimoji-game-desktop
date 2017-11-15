@@ -424,6 +424,18 @@ Prefab:
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4552042637954292, guid: e7b1e6c7ee31f3a4d8ab099aec3812c6, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4655291728202118, guid: e7b1e6c7ee31f3a4d8ab099aec3812c6, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1849025965560180, guid: e7b1e6c7ee31f3a4d8ab099aec3812c6, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e7b1e6c7ee31f3a4d8ab099aec3812c6, type: 2}
   m_IsPrefabParent: 0
@@ -954,7 +966,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0194ba96d3ee86449b347ceca279d76a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  x_offset: -1
+  x_offset: 0
   y_offset: 0
   player: {fileID: 1672675555}
 --- !u!1001 &1748094154
@@ -1104,8 +1116,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2036980633}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 348.5, y: 196, z: 0}
-  m_LocalScale: {x: 0.87125, y: 0.87125, z: 0.87125}
+  m_LocalPosition: {x: 959, y: 539.5, z: 0}
+  m_LocalScale: {x: 2.3975, y: 2.3975, z: 2.3975}
   m_Children:
   - {fileID: 31054193}
   - {fileID: 157386238}
