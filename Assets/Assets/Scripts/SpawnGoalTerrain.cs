@@ -9,6 +9,6 @@ public class SpawnGoalTerrain : MonoBehaviour {
     public void SpawnGoal()
     {
         Instantiate(obj[Random.Range(0, obj.GetLength(0))], transform.position, Quaternion.identity);
-        Invoke("Spawn", spawnTime);
+        Invoke("SpawnGoal", spawnTime);
     }
 }
