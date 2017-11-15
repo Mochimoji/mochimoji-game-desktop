@@ -5,19 +5,20 @@ using UnityEngine;
 public class SpawnTerrain : MonoBehaviour {
     public GameObject[] obj;
     public float spawnTime = 1f;
-    public SpawnGoalTerrain goal;
+    //public SpawnGoalTerrain goal;
 
-	void Start () {
-        for(var i = 0; i < 10; i++)
-        {
-            SpawnRandom();
-        }
-        goal.SpawnGoal();
-	}
+    void Start () {
+        SpawnRandom();
+        //for (var i = 0; i < 10; i++)
+        //{
+        //    SpawnRandom();
+        //}
+        //goal.SpawnGoal();
+    }
 
     void SpawnRandom ()
     {
         Instantiate(obj[Random.Range(0, obj.GetLength(0))], transform.position, Quaternion.identity);
-        Invoke("Spawn", spawnTime);
+        Invoke("SpawnRandom", spawnTime);
     }
 }
