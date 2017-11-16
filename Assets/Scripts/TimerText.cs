@@ -12,7 +12,7 @@ public class TimerText : MonoBehaviour
 
     void Start()
     {
-        //StartTime = Time.time;
+        StartTime = 60.0f;
     }
 
     void Update()
