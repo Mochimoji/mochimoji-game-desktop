@@ -5,9 +5,18 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Assets/_Scenes/GameStartScene.unity
-    guid: 052052bcb37f444b3a83b714fe7adc0d
-  - enabled: 1
-    path: Assets/Assets/_Scenes/MainScene.unity
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: Assets/_Scenes/MainScene.unity
     guid: 23b42ac2440f77a42aa0963a9e921f45
+  - enabled: 0
+    path: Assets/Trash/FaceDetection3.unity
+    guid: 27792892e2ca44578a5f037016b18732
+  - enabled: 1
+    path: Assets/CloudUserManager/DemoScenes/UserRecognitionScene0.unity
+    guid: cda3a613197af464a9995372646de19f
+  - enabled: 1
+    path: Assets/CloudUserManager/DemoScenes/UserRecognitionScene1.unity
+    guid: 56549c2d143441c439db2ed7b9c8e2c3

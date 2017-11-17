@@ -610,9 +610,9 @@ PlayerSettings:
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: e4afa9ff-15b3-4b5b-94a5-a6c9a11350a0
-  projectName: Mochimoji
-  organizationId: jf3ng
+  cloudProjectId: 
+  projectName: 
+  organizationId: 
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
