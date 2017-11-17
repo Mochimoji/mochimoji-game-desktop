@@ -13,14 +13,14 @@ public class WebcamSource : MonoBehaviour, ImageSourceInterface
 	[Tooltip("Selected web-camera name, if any.")]
 	public string webcamName;
 
-	// the web-camera texture
-	private WebCamTexture webcamTex;
+    // the web-camera texture
+    private WebCamTexture webcamTex;
 
 	// whether the output aspect ratio is set
 	private bool bTexResolutionSet = false;
 
 
-	public virtual void Awake () 
+	public virtual void Awake ()
 	{
 		WebCamDevice[] devices = WebCamTexture.devices;
 
@@ -60,6 +60,7 @@ public class WebcamSource : MonoBehaviour, ImageSourceInterface
 		if (HasCamera())
 		{
 			webcamTex.Play();
+            Debug.Log("************************ I am here Webcamsource after play");
 		}
 	}
 
@@ -91,20 +92,32 @@ public class WebcamSource : MonoBehaviour, ImageSourceInterface
 	/// <returns>The image.</returns>
 	public Texture2D GetImage()
 	{
-		Texture2D snap = new Texture2D(webcamTex.width, webcamTex.height, TextureFormat.ARGB32, false);
+        //webcamTex = new WebCamTexture();
+        //OnApplyTexture(webcamTex);
+        //bTexResolutionSet = true;
+        //webcamTex.Play();
 
-		if (webcamTex)
-		{
-			snap.SetPixels(webcamTex.GetPixels());
-			snap.Apply();
+        Texture2D snap = new Texture2D(webcamTex.width, webcamTex.height, TextureFormat.ARGB32, false);
 
-			if (flipHorizontally)
-			{
-				snap = CloudTexTools.FlipTexture(snap);
-			}
-		}
+		//Texture2D _textureFromCamera = new Texture2D(webcamTex.width, webcamTex.height, TextureFormat.ARGB32, false);
+        //_textureFromCamera.SetPixels((GetComponent<RawImage>().texture as WebCamTexture).GetPixels());
+        //_textureFromCamera.Apply();
+        //Debug.Log("*************" + _textureFromCamera.width);
+        Debug.Log("************" + webcamTex.height);
 
-		return snap;
+        if (webcamTex)
+        {
+        	snap.SetPixels(webcamTex.GetPixels());
+        	snap.Apply();
+
+        	if (flipHorizontally)
+        	{
+        		snap = CloudTexTools.FlipTexture(snap);
+        	}
+        }
+
+        return snap;
+        //return _textureFromCamera;
 	}
 
 

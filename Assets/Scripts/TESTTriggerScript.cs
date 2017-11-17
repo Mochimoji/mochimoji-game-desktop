@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,9 +8,10 @@ public class TESTTriggerScript : MonoBehaviour {
 
     private CamModalPanel modalPanel;
     private WebCamTexture webcamTex;
-    private string webcamName = "";
+    private string webcamName;
     public GameObject modalPanelObject;
     public WebcamSource cam;
+    // public GameObject webcam;
 
     void Awake()
     {
@@ -22,16 +24,7 @@ public class TESTTriggerScript : MonoBehaviour {
         if (collision.gameObject.CompareTag("Player"))
         {
             modalPanelObject.SetActive(true);
-            GameObject.FindWithTag("WebCam").SetActive(true);
-
-            webcamTex = new WebCamTexture(webcamName);
-            // cam.OnApplyTexture(webcamTex);
-
-            RawImage rawimage = GetComponent<RawImage>();
-            
-            rawimage.texture = webcamTex;
-
-            Debug.Log("*************** reached collision CamModalPanel");
+            cam.Awake();
         }
     }
     private void OnTriggerStay2D(Collider2D collision)
@@ -51,23 +44,4 @@ public class TESTTriggerScript : MonoBehaviour {
         modalPanelObject.SetActive(false);
     }
 
-
-    // public void OnApplyTexture(Texture tex)
-    // {
-    //     RawImage rawimage = GetComponent<RawImage>();
-    //     if (rawimage)
-    //     {
-    //         rawimage.texture = tex;
-    //         //rawimage.material.mainTexture = tex;
-    //     }
-    // }
-
-    // public void OnSetAspectRatio(int width, int height)
-    // {
-    //     AspectRatioFitter ratioFitter = GetComponent<AspectRatioFitter>();
-    //     if (ratioFitter)
-    //     {
-    //         ratioFitter.aspectRatio = (float)width / (float)height;
-    //     }
-    // }
 }
