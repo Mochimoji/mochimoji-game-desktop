@@ -607,13 +607,13 @@ PlayerSettings:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled:
-    Collab: 1
+    Collab: 0
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: e4afa9ff-15b3-4b5b-94a5-a6c9a11350a0
-  projectName: Mochimoji
-  organizationId: jf3ng
+  cloudProjectId: 957cc60c-a103-494f-800c-bc684d3da00b
+  projectName: Mochimoji (1)
+  organizationId: ayuspark
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
