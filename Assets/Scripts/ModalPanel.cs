@@ -1,11 +1,11 @@
-﻿//using UnityEngine;
-//using UnityEngine.UI;
-//using UnityEngine.Events;
-//using System.Collections;
+﻿// using UnityEngine;
+// using UnityEngine.UI;
+// using UnityEngine.Events;
+// using System.Collections;
 
-////  This script will be updated in Part 2 of this 2 part series.
-//public class ModalPanel : MonoBehaviour
-//{
+// //  This script will be updated in Part 2 of this 2 part series.
+// public class ModalPanel : MonoBehaviour
+// {
 
 //    public Text question;
 //    public Image iconImage;
@@ -57,4 +57,4 @@
 //    {
 //        modalPanelObject.SetActive(false);
 //    }
-//}
+// }

@@ -1,11 +1,11 @@
-﻿//using UnityEngine;
-//using UnityEngine.UI;
-//using UnityEngine.Events;
-//using System.Collections;
+﻿// using UnityEngine;
+// using UnityEngine.UI;
+// using UnityEngine.Events;
+// using System.Collections;
 
-////  This script will be updated in Part 2 of this 2 part series.
-//public class TestModalPanel : MonoBehaviour
-//{
+// //  This script will be updated in Part 2 of this 2 part series.
+// public class TestModalPanel : MonoBehaviour
+// {
 //    private ModalPanel modalPanel;
 //    private DisplayManager displayManager;
 
@@ -45,4 +45,4 @@
 //    {
 //        displayManager.DisplayMessage("I give up!");
 //    }
-//}
+// }
